@@ -33,6 +33,7 @@
 
 <script>
 import { Viewer, FormDesign } from 'belvoly-form-studio'
+import { Message } from 'element-ui'
 
 export default {
   components: {
@@ -46,7 +47,13 @@ export default {
         }
     },
     methods: {
-        preview () {
+        async preview () {
+            const isValid = await (this.$refs.designer).validate()
+            if(!isValid) {
+                Message.error('属性验证不通过')
+                return
+            }
+
             const model = (this.$refs.designer).getModel()
             this.designModel = model
             this.previewDialogVisible = true
