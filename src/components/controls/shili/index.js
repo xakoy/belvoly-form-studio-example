@@ -29,7 +29,11 @@ const control = {
         new LabelProperty('文本'),
         {
             propName: 'maxlength',
-            editor: MaxlengthEditor
+            editor: MaxlengthEditor,
+            rules: [{
+                required: true,
+                message: '请填写最大长度'
+            }]
         }
     ],
     rules: [

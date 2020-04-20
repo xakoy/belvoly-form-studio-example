@@ -13,7 +13,7 @@
         </el-row>
     </div>
     <div class="form-design-container">
-        <form-design ref="designer"></form-design>
+        <form-design ref="designer" :enable-property-valid="true"></form-design>
     </div>
     <el-dialog
         width="1200px"
@@ -89,6 +89,7 @@ export default {
 
     &-container {
         flex: 1;
+        height: 100px;
     }
 }
 </style>
