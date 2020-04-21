@@ -1,0 +1,9 @@
+{
+  "jshint.enable": false,
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  } // 保存自动格式化
+}
