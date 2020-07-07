@@ -3,9 +3,7 @@
         <div class="form-design-header">
             <el-row>
                 <el-col :span="8">
-                    <h3>
-                        表单设置： <text><span style="color:#FF0000">（修改表单设计将会丢失原有数据，请慎重操作）</span></text>
-                    </h3>
+                    <h3>表单设置： <span style="color:#FF0000">（修改表单设计将会丢失原有数据，请慎重操作）</span></h3>
                 </el-col>
                 <el-col :span="16" style="text-align: right">
                     <el-button size="small" @click="getModelHandler">获取JSON</el-button>
